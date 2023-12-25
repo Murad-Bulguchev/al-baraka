@@ -9,6 +9,7 @@ import Calculator from "./components/Calculator";
 import Reviews from "./components/Reviews";
 import Footer from "./components/Footer";
 import Features from "./components/Features";
+import Sponsors from "./components/Sponsors";
 
 const App: React.FC = () => {
   return (
@@ -24,6 +25,7 @@ const App: React.FC = () => {
         <Card />
         <Popular />
         <Calculator />
+        <Sponsors />
         <Reviews />
         {/* <Features /> */}
       </div>
