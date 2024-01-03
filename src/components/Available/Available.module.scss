@@ -1,0 +1,86 @@
+@import '../../styles/contants.scss';
+
+.wrapper{
+  background: white;
+  overflow: hidden;
+  .container{
+    flex-direction: column;
+    gap: 2rem;
+    .heading{
+      width: 100%;
+      justify-content: space-between;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      >:nth-child(2)
+      {
+        text-decoration: underline;
+        color: orange;
+        cursor: pointer;
+      }
+    }
+
+    .showCase{
+      width: 100%;
+      gap: 1.5rem;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      >img{
+        border-radius: 20px;
+        max-width: 25rem;
+        max-height: 18rem;
+        box-shadow: 0px 21px 13px rgba(0, 0, 0, 13%);
+        cursor: pointer;
+      }
+    }
+  }
+
+  .availableFast {
+    text-align: center;
+    padding-top: 10px;
+
+    img {
+      padding: 1rem;
+    }
+
+    h1 {
+      margin-top: 5rem;
+      font-size: 35px;
+    }
+  }
+
+  .availableFastText {
+    font-size: 1.4rem;
+    padding-top: 10px;
+  }
+
+  .howContent {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+
+    .howLeft {
+      display: flex;
+      background-image: url("https://www.al-baraka.ru/assets/img/2.svg");
+      span {
+        z-index: 1;
+      }
+      .howItem {
+        height: 108px;
+      }
+    }
+      .howItem {
+        background: linear-gradient(to right, #127551 0%, #127551 71%, #2B8D58 100%);
+        margin: 10px;
+        padding: 30px;
+        font-size: 1rem;
+        width: 500px;
+        text-align: center;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;
+        box-shadow: 0 0 20px #eee;
+        border-radius: 10px;
+    }
+
+  }
+}

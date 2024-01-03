@@ -1,0 +1,176 @@
+@import '../../styles/contants.scss';
+
+.wrapper {
+    overflow: hidden;
+
+    .container {
+        position: relative;
+        z-index: 1;
+
+        .upperElements {
+            @media (max-width: $sm) {
+                justify-content: center;
+                text-align: center;
+                gap: 2rem;
+
+            }
+            
+            @media screen and (max-width: 588px) {
+                span:nth-child(1) {
+                    font-weight: normal;
+                }
+            }
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            span:nth-child(1) {
+                font-size: 3rem;
+                font-weight: bold;
+
+                @media (max-width: 632px) {
+                    font-size: 2.5rem;
+                }
+
+                @media (max-width: 588px) {
+                    font-size: 2.3rem;
+                }
+
+                @media (max-width: 549px) {
+                    font-size: 2.2rem;
+                }
+
+                @media (max-width: 531px) {
+                    font-size: 2.1rem;
+                }
+
+                @media (max-width: 503px) {
+                    font-size: 2rem;
+                }
+
+                @media (max-width: 484px) {
+                    font-size: 1.9rem;
+                }
+
+                @media (max-width: 461px) {
+                    font-size: 1.8rem;
+                }
+
+                @media (max-width: 444px) {
+                    font-size: 1.8rem;
+                }
+
+                @media (max-width: 441px) {
+                    font-size: 1.7rem;
+                }
+
+                @media (max-width: 423px) {
+                    font-size: 1.6rem;
+                }
+
+                @media (max-width: 399px) {
+                    font-size: 1.5rem;
+                }
+
+                @media (max-width: 388px) {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+
+
+        .lowerElements {
+            @media (max-width: $sm), (max-width: $md) {
+                margin-top: 4rem;
+                gap: 2rem;
+                justify-content: center;
+            }
+            margin-top: 12rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .experience {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                >:nth-child(2) {
+                    line-height: 25px;
+                }
+            }
+
+            .certificate {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                img {
+                    margin-bottom: 1rem;
+                    width: 3.5rem;
+                }
+            }
+        }
+
+        .person {
+            @media (max-width: $sm ), (max-width: $md) {
+                position: relative;
+                left: 0;
+                background-size: 20rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-position: bottom;
+
+
+                img {
+                    max-width: 210px;
+                }
+            }
+            position: absolute;
+            bottom: -3rem;
+            margin: auto;
+            background-image: url("../splash.png");
+            background-repeat: no-repeat;
+            background-size: 14rem;
+            left: 43%;
+
+            img {
+                @media (max-width: $sm ) {
+                    width: 23rem;
+                }
+                margin-bottom: -5px;
+            }
+        }
+
+        .mainCallBtn {
+            @media (max-width: $sm ) {
+                position: relative;
+                display: none;
+            }
+            position: absolute;
+            top: 50%;
+            left: 0;
+            cursor: pointer;
+                background-image: linear-gradient(to right, #02AAB0 0%, #2B8D58  71%, #2B8D58  100%);
+                margin: 10px;
+                padding: 20px 45px;
+                text-align: center;
+                text-transform: uppercase;
+                transition: 0.5s;
+                background-size: 200% auto;
+                color: white;
+                box-shadow: 0 0 20px #eee;
+                border-radius: 10px;
+                display: block;
+            border: none;
+            &:hover {
+                background-position: right center; /* change the direction of the change here */
+                color: #fff;
+                text-decoration: none;
+                scale: 1.05;
+            }
+
+        }
+    }
+}
